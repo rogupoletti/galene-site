@@ -1,7 +1,15 @@
 import Image from "next/image";
 import { BrandLogo } from "@/components/brand-logo";
 import { BrandSymbol } from "@/components/brand-symbol";
-import { featuredProducts, kits, navigation, scentCollections, whatsapp } from "@/content/site";
+import {
+  christmasProducts,
+  christmasScents,
+  featuredProducts,
+  kits,
+  navigation,
+  scentCollections,
+  whatsapp,
+} from "@/content/site";
 
 function ArrowIcon() {
   return (
@@ -171,6 +179,52 @@ export default function Home() {
                 <h3>{collection.name}</h3>
                 <p>{collection.notes}</p>
               </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="section christmas-section" id="natal">
+        <div className="section-heading christmas-heading">
+          <div>
+            <p className="eyebrow">Edição de Natal</p>
+            <h2>Fragrâncias para celebrar os momentos mais especiais.</h2>
+          </div>
+          <p>
+            Uma coleção criada para perfumar encontros, acender memórias e deixar a casa ainda
+            mais acolhedora nesta época.
+          </p>
+        </div>
+
+        <div className="christmas-scent-grid">
+          {christmasScents.map((scent) => (
+            <article className="christmas-scent-card" key={scent.name}>
+              <div className="christmas-scent-image">
+                <Image src={scent.image} alt={scent.imageAlt} fill sizes="(max-width: 720px) 100vw, 25vw" />
+              </div>
+              <p className="christmas-family">{scent.family}</p>
+              <h3>{scent.name}</h3>
+              <p>{scent.notes}</p>
+            </article>
+          ))}
+        </div>
+
+        <div className="christmas-products-heading">
+          <p className="eyebrow">Presentes especiais</p>
+          <h3>Velas especiais de Natal</h3>
+          <p>Velas que trazem o encanto do Natal para a sua casa.</p>
+        </div>
+        <div className="christmas-product-grid">
+          {christmasProducts.map((product) => (
+            <article className="christmas-product-card" key={product.name}>
+              <div className="christmas-product-image">
+                <Image src={product.image!} alt={product.imageAlt!} fill sizes="(max-width: 720px) 100vw, 25vw" />
+              </div>
+              <div>
+                <p>{product.size}</p>
+                <h3>{product.name}</h3>
+              </div>
+              <strong>{product.price}</strong>
             </article>
           ))}
         </div>

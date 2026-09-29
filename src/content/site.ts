@@ -14,10 +14,19 @@ export type ScentCollection = {
   symbol: "wave" | "flower" | "branch";
 };
 
+export type ChristmasScent = {
+  name: string;
+  family: string;
+  notes: string;
+  image: string;
+  imageAlt: string;
+};
+
 export const navigation = [
   { label: "Início", href: "#inicio" },
   { label: "Produtos", href: "#produtos" },
   { label: "Coleções", href: "#colecoes" },
+  { label: "Natal", href: "#natal" },
   { label: "Sobre", href: "#sobre" },
 ] as const;
 
@@ -98,5 +107,67 @@ export const scentCollections: ScentCollection[] = [
     name: "Campo",
     notes: "Alecrim, flor de laranjeira, cascas e folhas",
     symbol: "branch",
+  },
+];
+
+export const christmasScents: ChristmasScent[] = [
+  {
+    name: "Biscoito de Gengibre",
+    family: "Gourmand adocicada",
+    notes: "Notas doces e especiadas que lembram o aconchego do Natal.",
+    image: "/images/christmas/gingerbread.jpg",
+    imageAlt: "Biscoitos de gengibre com especiarias e frutas vermelhas",
+  },
+  {
+    name: "Noite Feliz",
+    family: "Amadeirada aromática",
+    notes: "Um equilíbrio entre o amadeirado e notas frescas que criam uma atmosfera acolhedora.",
+    image: "/images/christmas/noite-feliz.jpg",
+    imageAlt: "Luzes quentes entre pinhos em uma composição natalina",
+  },
+  {
+    name: "Queima Nozes",
+    family: "Amadeirada especiada",
+    notes: "Notas amadeiradas e adocicadas que remetem ao clima natalino com elegância.",
+    image: "/images/christmas/queima-nozes.jpg",
+    imageAlt: "Lanterna acesa com frutas vermelhas e velas ao fundo",
+  },
+  {
+    name: "Panetone",
+    family: "Gourmand adocicada",
+    notes: "Aroma marcante e acolhedor para os melhores momentos da sua casa.",
+    image: "/images/christmas/panetone.jpg",
+    imageAlt: "Fatia de panetone em uma mesa decorada para o Natal",
+  },
+];
+
+export const christmasProducts: Product[] = [
+  {
+    name: "Vela Pinha",
+    size: "Edição de Natal",
+    price: "R$ 35,00",
+    image: "/images/christmas/vela-pinha.jpg",
+    imageAlt: "Vela em formato de pinha com decoração natalina",
+  },
+  {
+    name: "Vela Árvore",
+    size: "Edição de Natal",
+    price: "R$ 35,00",
+    image: "/images/christmas/vela-arvore.jpg",
+    imageAlt: "Vela em formato de árvore de Natal",
+  },
+  {
+    name: "Vela em lata",
+    size: "Edição de Natal",
+    price: "R$ 30,00",
+    image: "/images/christmas/vela-lata.jpg",
+    imageAlt: "Vela em lata vermelha decorada para o Natal",
+  },
+  {
+    name: "Kit Pinha + Árvore de Natal",
+    size: "Edição de Natal",
+    price: "R$ 65,00",
+    image: "/images/christmas/kit-natal.jpg",
+    imageAlt: "Kit com vela pinha e vela árvore de Natal",
   },
 ];

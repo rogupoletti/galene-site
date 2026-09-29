@@ -2,6 +2,8 @@ import { describe, it } from "node:test";
 import assert from "node:assert/strict";
 import {
   featuredProducts,
+  christmasProducts,
+  christmasScents,
   kits,
   navigation,
   scentCollections,
@@ -10,7 +12,7 @@ import {
 
 describe("Galene site content", () => {
   it("keeps every navigation entry connected to a page section", () => {
-    assert.equal(navigation.length, 4);
+    assert.equal(navigation.length, 5);
     assert.ok(navigation.every((item) => item.href.startsWith("#")));
   });
 
@@ -26,6 +28,17 @@ describe("Galene site content", () => {
     assert.deepEqual(
       scentCollections.map((collection) => collection.name),
       ["Maré", "Aconchego", "Campo"],
+    );
+  });
+
+  it("includes the Christmas fragrance and candle collection", () => {
+    assert.deepEqual(
+      christmasScents.map((scent) => scent.name),
+      ["Biscoito de Gengibre", "Noite Feliz", "Queima Nozes", "Panetone"],
+    );
+    assert.deepEqual(
+      christmasProducts.map((product) => product.price),
+      ["R$ 35,00", "R$ 35,00", "R$ 30,00", "R$ 65,00"],
     );
   });
 

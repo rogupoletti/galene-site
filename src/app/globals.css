@@ -416,6 +416,118 @@ svg {
   color: var(--color-muted);
 }
 
+.christmas-section {
+  background:
+    radial-gradient(circle at 92% 7%, rgba(155, 67, 24, 0.14), transparent 20rem),
+    linear-gradient(140deg, #fff9ef 0%, #f4eee6 100%);
+}
+
+.christmas-heading h2 {
+  max-width: 12ch;
+  color: var(--color-brand-dark);
+}
+
+.christmas-scent-grid,
+.christmas-product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(1rem, 2.1vw, 2rem);
+}
+
+.christmas-scent-card {
+  min-width: 0;
+}
+
+.christmas-scent-image,
+.christmas-product-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-soft);
+}
+
+.christmas-scent-image {
+  aspect-ratio: 1 / 0.72;
+  border-radius: var(--radius-md);
+}
+
+.christmas-scent-image img,
+.christmas-product-image img {
+  object-fit: cover;
+}
+
+.christmas-family,
+.christmas-product-card > div:last-of-type > p {
+  margin: 1.15rem 0 0;
+  color: var(--color-brand);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.christmas-scent-card h3,
+.christmas-products-heading h3,
+.christmas-product-card h3 {
+  margin: 0.45rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.christmas-scent-card > p:last-child {
+  margin: 0.75rem 0 0;
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.christmas-products-heading {
+  max-width: 40rem;
+  margin: clamp(4.5rem, 8vw, 7.5rem) 0 clamp(2rem, 4vw, 3.5rem);
+}
+
+.christmas-products-heading h3 {
+  color: var(--color-brand-dark);
+  font-size: clamp(2.3rem, 4vw, 4rem);
+}
+
+.christmas-products-heading > p:last-child {
+  margin: 1rem 0 0;
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.christmas-product-card {
+  display: grid;
+  gap: 1rem;
+  min-width: 0;
+}
+
+.christmas-product-image {
+  aspect-ratio: 1 / 0.75;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-soft);
+}
+
+.christmas-product-card > div:last-of-type > p {
+  margin-top: 0;
+}
+
+.christmas-product-card h3 {
+  font-size: 1.38rem;
+}
+
+.christmas-product-card strong {
+  color: var(--color-brand-dark);
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
 .product-info p {
   margin: 0.3rem 0 0;
   font-size: 0.85rem;
@@ -767,6 +879,11 @@ svg {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .christmas-scent-grid,
+  .christmas-product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .product-card:last-child {
     grid-column: 1 / -1;
     width: calc(50% - 0.5rem);
@@ -839,6 +956,11 @@ svg {
   }
 
   .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .christmas-scent-grid,
+  .christmas-product-grid {
     grid-template-columns: 1fr;
   }
 
