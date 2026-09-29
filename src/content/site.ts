@@ -87,7 +87,7 @@ export const kits: Product[] = [
   {
     name: "Kit 3 velas",
     size: "3 × 50 g",
-    price: "R$ 55,00",
+    price: "$55",
     note: "Três velas para iluminar e perfumar momentos especiais.",
   },
 ];
