@@ -85,10 +85,10 @@ export const kits: Product[] = [
     note: "Dois jeitos de manter o seu aroma favorito sempre por perto.",
   },
   {
-    name: "Kit grande",
-    size: "Difusor 250 ml + home spray 120 ml",
-    price: "$ 120",
-    note: "Presença prolongada para ambientes e ocasiões especiais.",
+    name: "Kit 3 velas",
+    size: "3 × 50 g",
+    price: "R$ 55,00",
+    note: "Três velas para iluminar e perfumar momentos especiais.",
   },
 ];
 

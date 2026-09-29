@@ -22,6 +22,12 @@ describe("Galene site content", () => {
       ["Vela aromática", "Difusor de aromas", "Home spray"],
     );
     assert.equal(kits.length, 4);
+    assert.deepEqual(kits.at(-1), {
+      name: "Kit 3 velas",
+      size: "3 × 50 g",
+      price: "R$ 55,00",
+      note: "Três velas para iluminar e perfumar momentos especiais.",
+    });
   });
 
   it("includes the three Galene scent collections", () => {
