@@ -67,13 +67,14 @@ describe("Galene site content", () => {
     assert.ok(christmasScents.every((scent) => !("image" in scent)));
     assert.deepEqual(
       christmasProducts.map((product) => product.price),
-      ["R$ 35,00", "R$ 35,00"],
+      ["R$ 35,00", "R$ 35,00", "R$ 65,00"],
     );
     assert.deepEqual(
       christmasProducts.map((product) => product.image),
       [
         "/images/christmas/vela-pinha-rosa.png",
         "/images/christmas/vela-arvore-colorida.png",
+        "/images/christmas/natal-trees-and-pine.png",
       ],
     );
   });

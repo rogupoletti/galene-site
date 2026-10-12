@@ -176,4 +176,11 @@ export const christmasProducts: Product[] = [
     image: "/images/christmas/vela-arvore-colorida.png",
     imageAlt: "Velas em formato de árvores em tons de creme, azul e rosa",
   },
+  {
+    name: "Kit Pinha + Árvore",
+    size: "Edição de Natal",
+    price: "R$ 65,00",
+    image: "/images/christmas/natal-trees-and-pine.png",
+    imageAlt: "Kit com vela pinha e vela árvore de Natal",
+  },
 ];

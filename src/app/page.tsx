@@ -247,7 +247,7 @@ export default function Home() {
         <div className="christmas-products-heading">
           <p className="eyebrow">Presentes especiais</p>
           <h3>Velas especiais de Natal</h3>
-          <p>Vela Pinha e Vela Árvore para trazer o encanto do Natal para a sua casa.</p>
+          <p>Vela Pinha, Vela Árvore e Kit Pinha + Árvore para celebrar o Natal em casa.</p>
         </div>
         <div className="christmas-product-grid">
           {christmasProducts.map((product) => (

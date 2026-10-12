@@ -476,9 +476,9 @@ svg {
 
 .christmas-product-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: clamp(1rem, 2.1vw, 2rem);
-  max-width: 42rem;
+  max-width: 58rem;
 }
 
 .christmas-scent-card {
