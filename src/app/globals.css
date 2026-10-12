@@ -434,6 +434,7 @@ svg {
 
 .christmas-heading {
   display: block;
+  margin-bottom: clamp(2.25rem, 4vw, 3.5rem);
 }
 
 .christmas-introduction {
@@ -450,6 +451,27 @@ svg {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1rem, 2.1vw, 2rem);
   max-width: 50rem;
+}
+
+.christmas-overview {
+  display: grid;
+  grid-template-columns: minmax(20rem, 1fr) minmax(18rem, 0.72fr);
+  align-items: center;
+  gap: clamp(2.5rem, 7vw, 7rem);
+}
+
+.christmas-overview-image {
+  position: relative;
+  width: min(100%, 28rem);
+  aspect-ratio: 1;
+  justify-self: end;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.christmas-overview-image img {
+  object-fit: cover;
 }
 
 .christmas-product-grid {
@@ -897,7 +919,8 @@ svg {
 
   .section-heading,
   .kits-section,
-  .story-section {
+  .story-section,
+  .christmas-overview {
     grid-template-columns: 1fr;
   }
 
@@ -916,6 +939,10 @@ svg {
   .christmas-scent-grid,
   .christmas-product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .christmas-overview-image {
+    justify-self: start;
   }
 
   .product-card:last-child {
@@ -997,6 +1024,10 @@ svg {
   .christmas-scent-grid,
   .christmas-product-grid {
     grid-template-columns: 1fr;
+  }
+
+  .christmas-overview-image {
+    width: 100%;
   }
 
   .product-card:last-child {

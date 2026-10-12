@@ -211,25 +211,37 @@ export default function Home() {
       </section>
 
       <section className="section christmas-section" id="natal">
-        <div className="section-heading christmas-heading">
+        <div className="christmas-overview">
           <div>
-            <p className="eyebrow">Edição especial de Natal</p>
-            <h2>Aromas para celebrar encontros e memórias.</h2>
-            <p className="christmas-introduction">
-              Biscoito de Gengibre e Queima Nozes: duas fragrâncias para deixar a casa ainda mais
-              acolhedora nesta época.
-            </p>
-          </div>
-        </div>
+            <div className="section-heading christmas-heading">
+              <div>
+                <p className="eyebrow">Edição especial de Natal</p>
+                <h2>Aromas para celebrar encontros e memórias.</h2>
+                <p className="christmas-introduction">
+                  Biscoito de Gengibre e Queima Nozes: duas fragrâncias para deixar a casa ainda mais
+                  acolhedora nesta época.
+                </p>
+              </div>
+            </div>
 
-        <div className="christmas-scent-grid">
-          {christmasScents.map((scent) => (
-            <article className="christmas-scent-card" key={scent.name}>
-              <p className="christmas-family">{scent.family}</p>
-              <h3>{scent.name}</h3>
-              <p>{scent.notes}</p>
-            </article>
-          ))}
+            <div className="christmas-scent-grid">
+              {christmasScents.map((scent) => (
+                <article className="christmas-scent-card" key={scent.name}>
+                  <p className="christmas-family">{scent.family}</p>
+                  <h3>{scent.name}</h3>
+                  <p>{scent.notes}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+          <div className="christmas-overview-image">
+            <Image
+              src="/images/christmas/natal-trees-and-pine.png"
+              alt="Velas de Natal em formato de árvores e pinha acesas"
+              fill
+              sizes="(max-width: 840px) 100vw, 34vw"
+            />
+          </div>
         </div>
 
         <div className="christmas-products-heading">
