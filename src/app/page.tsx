@@ -76,11 +76,11 @@ export default function Home() {
         <div className="hero-visual">
           <div className="hero-image-wrap">
             <Image
-              src="/images/candle.png"
-              alt="Vela aromática Galene em uma composição de tons naturais"
+              src="/images/hero-foliage.jpeg"
+              alt="Produtos Galene em uma prateleira entre folhagens naturais"
               fill
               priority
-              sizes="(max-width: 900px) 100vw, 48vw"
+              sizes="(max-width: 840px) 100vw, 26rem"
             />
           </div>
           <div className="hero-note">
