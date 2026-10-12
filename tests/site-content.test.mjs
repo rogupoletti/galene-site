@@ -47,6 +47,7 @@ describe("Galene site content", () => {
       christmasScents.map((scent) => scent.name),
       ["Biscoito de Gengibre", "Queima Nozes"],
     );
+    assert.ok(christmasScents.every((scent) => !("image" in scent)));
     assert.deepEqual(
       christmasProducts.map((product) => product.price),
       ["R$ 35,00", "R$ 35,00", "R$ 30,00", "R$ 65,00"],

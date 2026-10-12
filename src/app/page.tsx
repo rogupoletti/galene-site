@@ -224,9 +224,6 @@ export default function Home() {
         <div className="christmas-scent-grid">
           {christmasScents.map((scent) => (
             <article className="christmas-scent-card" key={scent.name}>
-              <div className="christmas-scent-image">
-                <Image src={scent.image} alt={scent.imageAlt} fill sizes="(max-width: 720px) 100vw, 25vw" />
-              </div>
               <p className="christmas-family">{scent.family}</p>
               <h3>{scent.name}</h3>
               <p>{scent.notes}</p>

@@ -18,8 +18,6 @@ export type ChristmasScent = {
   name: string;
   family: string;
   notes: string;
-  image: string;
-  imageAlt: string;
 };
 
 export const navigation = [
@@ -115,15 +113,11 @@ export const christmasScents: ChristmasScent[] = [
     name: "Biscoito de Gengibre",
     family: "Gourmand adocicada",
     notes: "Notas doces e especiadas que lembram o aconchego do Natal.",
-    image: "/images/christmas/gingerbread.jpg",
-    imageAlt: "Biscoitos de gengibre com especiarias e frutas vermelhas",
   },
   {
     name: "Queima Nozes",
     family: "Amadeirada especiada",
     notes: "Notas amadeiradas e adocicadas que remetem ao clima natalino com elegância.",
-    image: "/images/christmas/queima-nozes.jpg",
-    imageAlt: "Lanterna acesa com frutas vermelhas e velas ao fundo",
   },
 ];
 
