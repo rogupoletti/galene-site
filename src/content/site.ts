@@ -54,12 +54,12 @@ export const featuredProducts: Product[] = [
   },
   {
     name: "Home spray",
-    size: "120 ml",
-    price: "$ 45",
+    size: "30 ml",
+    price: "$ 15",
     image: "/images/home-spray.png",
-    imageAlt: "Home spray em frasco de vidro em cenário de tons naturais",
+    imageAlt: "Home spray de 30 ml em frasco de vidro em cenário de tons naturais",
     featured: true,
-    note: "Também disponível em 30 ml por $ 15",
+    note: "Perfume instantâneo para pequenos espaços.",
   },
 ];
 

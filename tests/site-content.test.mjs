@@ -22,8 +22,8 @@ describe("Galene site content", () => {
       ["Vela aromática", "Difusor de aromas", "Home spray"],
     );
     assert.deepEqual(
-      featuredProducts.slice(0, 2).map((product) => [product.size, product.price]),
-      [["60 g", "$ 20"], ["50 ml", "$ 35"]],
+      featuredProducts.map((product) => [product.size, product.price]),
+      [["60 g", "$ 20"], ["50 ml", "$ 35"], ["30 ml", "$ 15"]],
     );
     assert.equal(kits.length, 4);
     assert.deepEqual(kits.at(-1), {

@@ -432,6 +432,19 @@ svg {
   color: var(--color-brand-dark);
 }
 
+.christmas-heading {
+  display: block;
+}
+
+.christmas-introduction {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+  color: var(--color-muted);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
 .christmas-scent-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

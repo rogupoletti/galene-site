@@ -214,11 +214,11 @@ export default function Home() {
           <div>
             <p className="eyebrow">Edição de Natal</p>
             <h2>Fragrâncias para celebrar os momentos mais especiais.</h2>
+            <p className="christmas-introduction">
+              Uma coleção criada para perfumar encontros, acender memórias e deixar a casa ainda
+              mais acolhedora nesta época.
+            </p>
           </div>
-          <p>
-            Uma coleção criada para perfumar encontros, acender memórias e deixar a casa ainda
-            mais acolhedora nesta época.
-          </p>
         </div>
 
         <div className="christmas-scent-grid">
