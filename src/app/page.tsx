@@ -93,6 +93,31 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section story-section" id="sobre">
+        <div className="story-image">
+          <Image
+            src="/images/diffuser.png"
+            alt="Difusor de aromas em uma composição acolhedora"
+            fill
+            sizes="(max-width: 840px) 100vw, 46vw"
+          />
+        </div>
+        <div className="story-copy">
+          <p className="eyebrow">A essência Galene</p>
+          <h2>A casa também guarda memórias.</h2>
+          <p>
+            A Galene nasce do desejo de transformar ambientes em refúgios. Entre notas frescas,
+            florais e acolhedoras, criamos aromas que ajudam a marcar pausas, encontros e novos
+            começos.
+          </p>
+          <p>
+            Cada escolha — do frasco à combinação olfativa — busca trazer beleza, presença e
+            calmaria para dentro de casa.
+          </p>
+          <blockquote>“Aromas que transformam ambientes e criam momentos de calmaria.”</blockquote>
+        </div>
+      </section>
+
       <section className="manifesto" aria-label="Manifesto da marca">
         <p>
           Um aroma pode mudar a energia de um espaço — e a forma como você se sente dentro dele.
@@ -227,31 +252,6 @@ export default function Home() {
               <strong>{product.price}</strong>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="section story-section" id="sobre">
-        <div className="story-image">
-          <Image
-            src="/images/diffuser.png"
-            alt="Difusor de aromas em uma composição acolhedora"
-            fill
-            sizes="(max-width: 840px) 100vw, 46vw"
-          />
-        </div>
-        <div className="story-copy">
-          <p className="eyebrow">A essência Galene</p>
-          <h2>A casa também guarda memórias.</h2>
-          <p>
-            A Galene nasce do desejo de transformar ambientes em refúgios. Entre notas frescas,
-            florais e acolhedoras, criamos aromas que ajudam a marcar pausas, encontros e novos
-            começos.
-          </p>
-          <p>
-            Cada escolha — do frasco à combinação olfativa — busca trazer beleza, presença e
-            calmaria para dentro de casa.
-          </p>
-          <blockquote>“Aromas que transformam ambientes e criam momentos de calmaria.”</blockquote>
         </div>
       </section>
 

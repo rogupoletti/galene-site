@@ -51,6 +51,14 @@ describe("Galene site content", () => {
       christmasProducts.map((product) => product.price),
       ["R$ 35,00", "R$ 35,00", "R$ 30,00", "R$ 65,00"],
     );
+    assert.deepEqual(
+      christmasProducts.slice(0, 3).map((product) => product.image),
+      [
+        "/images/christmas/vela-pinha-rosa.png",
+        "/images/christmas/vela-arvore-colorida.png",
+        "/images/christmas/vela-lata-feliz-natal.png",
+      ],
+    );
   });
 
   it("publishes the verified WhatsApp contact", () => {

@@ -450,9 +450,13 @@ svg {
   border-radius: var(--radius-md);
 }
 
-.christmas-scent-image img,
-.christmas-product-image img {
+.christmas-scent-image img {
   object-fit: cover;
+}
+
+.christmas-product-image img {
+  object-fit: contain;
+  padding: 0.35rem;
 }
 
 .christmas-family,
