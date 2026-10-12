@@ -119,25 +119,11 @@ export const christmasScents: ChristmasScent[] = [
     imageAlt: "Biscoitos de gengibre com especiarias e frutas vermelhas",
   },
   {
-    name: "Noite Feliz",
-    family: "Amadeirada aromática",
-    notes: "Um equilíbrio entre o amadeirado e notas frescas que criam uma atmosfera acolhedora.",
-    image: "/images/christmas/noite-feliz.jpg",
-    imageAlt: "Luzes quentes entre pinhos em uma composição natalina",
-  },
-  {
     name: "Queima Nozes",
     family: "Amadeirada especiada",
     notes: "Notas amadeiradas e adocicadas que remetem ao clima natalino com elegância.",
     image: "/images/christmas/queima-nozes.jpg",
     imageAlt: "Lanterna acesa com frutas vermelhas e velas ao fundo",
-  },
-  {
-    name: "Panetone",
-    family: "Gourmand adocicada",
-    notes: "Aroma marcante e acolhedor para os melhores momentos da sua casa.",
-    image: "/images/christmas/panetone.jpg",
-    imageAlt: "Fatia de panetone em uma mesa decorada para o Natal",
   },
 ];
 

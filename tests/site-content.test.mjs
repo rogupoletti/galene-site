@@ -40,7 +40,7 @@ describe("Galene site content", () => {
   it("includes the Christmas fragrance and candle collection", () => {
     assert.deepEqual(
       christmasScents.map((scent) => scent.name),
-      ["Biscoito de Gengibre", "Noite Feliz", "Queima Nozes", "Panetone"],
+      ["Biscoito de Gengibre", "Queima Nozes"],
     );
     assert.deepEqual(
       christmasProducts.map((product) => product.price),
