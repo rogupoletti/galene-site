@@ -21,6 +21,10 @@ describe("Galene site content", () => {
       featuredProducts.map((product) => product.name),
       ["Vela aromática", "Difusor de aromas", "Home spray"],
     );
+    assert.deepEqual(
+      featuredProducts.slice(0, 2).map((product) => [product.size, product.price]),
+      [["60 g", "$ 20"], ["50 ml", "$ 35"]],
+    );
     assert.equal(kits.length, 4);
     assert.deepEqual(kits.at(-1), {
       name: "Kit 3 velas",
@@ -35,6 +39,7 @@ describe("Galene site content", () => {
       scentCollections.map((collection) => collection.name),
       ["Maré", "Aconchego", "Campo"],
     );
+    assert.match(scentCollections.at(-1).notes, /Bergamota/);
   });
 
   it("includes the Christmas fragrance and candle collection", () => {

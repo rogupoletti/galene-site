@@ -38,21 +38,21 @@ export const whatsapp = {
 export const featuredProducts: Product[] = [
   {
     name: "Vela aromática",
-    size: "180 g",
-    price: "$ 56",
+    size: "60 g",
+    price: "$ 20",
     image: "/images/candle.png",
-    imageAlt: "Vela aromática em recipiente de vidro sobre tecido natural",
+    imageAlt: "Vela aromática de 60 g em recipiente de vidro sobre tecido natural",
     featured: true,
-    note: "Também disponível em 60 g por $ 20",
+    note: "Luz e fragrância para momentos especiais.",
   },
   {
     name: "Difusor de aromas",
-    size: "250 ml",
-    price: "$ 75",
+    size: "50 ml",
+    price: "$ 35",
     image: "/images/diffuser.png",
-    imageAlt: "Difusor de aromas em vidro com varetas e flores secas",
+    imageAlt: "Difusor de aromas de 50 ml em vidro com varetas e flores secas",
     featured: true,
-    note: "Também disponível em 50 ml por $ 35",
+    note: "Aroma contínuo para o seu espaço.",
   },
   {
     name: "Home spray",
@@ -105,7 +105,7 @@ export const scentCollections: ScentCollection[] = [
   },
   {
     name: "Campo",
-    notes: "Alecrim, flor de laranjeira, cascas e folhas",
+    notes: "Bergamota, flor de laranjeira, cascas e folhas",
     symbol: "branch",
   },
 ];
