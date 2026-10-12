@@ -19,27 +19,44 @@ describe("Galene site content", () => {
   it("presents the complete product mix from the supplied catalog", () => {
     assert.deepEqual(
       featuredProducts.map((product) => product.name),
-      ["Vela aromática", "Difusor de aromas", "Home spray"],
+      ["Vela aromática", "Vela aromática", "Difusor de aromas", "Home spray", "Home spray"],
     );
     assert.deepEqual(
       featuredProducts.map((product) => [product.size, product.price]),
-      [["60 g", "$ 20"], ["50 ml", "$ 35"], ["30 ml", "$ 15"]],
+      [
+        ["60 g", "R$ 20,00"],
+        ["180 g", "R$ 50,00"],
+        ["50 ml", "R$ 35,00"],
+        ["30 ml", "R$ 20,00"],
+        ["120 ml", "R$ 50,00"],
+      ],
     );
-    assert.equal(kits.length, 4);
+    assert.equal(kits.length, 3);
     assert.deepEqual(kits.at(-1), {
       name: "Kit 3 velas",
-      size: "3 × 50 g",
-      price: "$55",
+      size: "3 × 60 g",
+      price: "R$ 55,00",
       note: "Três velas para iluminar e perfumar momentos especiais.",
     });
   });
 
-  it("includes the three Galene scent collections", () => {
+  it("includes every scent in the supplied catalog", () => {
     assert.deepEqual(
       scentCollections.map((collection) => collection.name),
-      ["Maré", "Aconchego", "Campo"],
+      [
+        "Água de Coco",
+        "Algas Marinhas",
+        "Vanilla",
+        "Chá Branco",
+        "Flor de Laranjeira",
+        "Cascas e Folhas",
+        "Trouss",
+      ],
     );
-    assert.match(scentCollections.at(-1).notes, /Bergamota/);
+    assert.deepEqual(
+      scentCollections.map((collection) => collection.family),
+      ["Cítrica", "Aromática", "Adocicada", "Floral fresca", "Floral cítrica", "Verde amadeirada", "Amadeirada"],
+    );
   });
 
   it("includes the Christmas fragrance and candle collection", () => {
@@ -50,14 +67,13 @@ describe("Galene site content", () => {
     assert.ok(christmasScents.every((scent) => !("image" in scent)));
     assert.deepEqual(
       christmasProducts.map((product) => product.price),
-      ["R$ 35,00", "R$ 35,00", "R$ 30,00", "R$ 65,00"],
+      ["R$ 35,00", "R$ 35,00"],
     );
     assert.deepEqual(
-      christmasProducts.slice(0, 3).map((product) => product.image),
+      christmasProducts.map((product) => product.image),
       [
         "/images/christmas/vela-pinha-rosa.png",
         "/images/christmas/vela-arvore-colorida.png",
-        "/images/christmas/vela-lata-feliz-natal.png",
       ],
     );
   });

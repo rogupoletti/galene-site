@@ -138,7 +138,7 @@ export default function Home() {
 
         <div className="product-grid">
           {featuredProducts.map((product, index) => (
-            <article className={`product-card product-card-${index + 1}`} key={product.name}>
+            <article className={`product-card product-card-${index + 1}`} key={`${product.name}-${product.size}`}>
               <div className="product-image">
                 <Image
                   src={product.image!}
@@ -201,6 +201,7 @@ export default function Home() {
             <article className="collection-card" key={collection.name}>
               <BrandSymbol symbol={collection.symbol} />
               <div>
+                <p className="collection-family">Família olfativa: {collection.family}</p>
                 <h3>{collection.name}</h3>
                 <p>{collection.notes}</p>
               </div>
@@ -212,11 +213,11 @@ export default function Home() {
       <section className="section christmas-section" id="natal">
         <div className="section-heading christmas-heading">
           <div>
-            <p className="eyebrow">Edição de Natal</p>
-            <h2>Fragrâncias para celebrar os momentos mais especiais.</h2>
+            <p className="eyebrow">Edição especial de Natal</p>
+            <h2>Aromas para celebrar encontros e memórias.</h2>
             <p className="christmas-introduction">
-              Uma coleção criada para perfumar encontros, acender memórias e deixar a casa ainda
-              mais acolhedora nesta época.
+              Biscoito de Gengibre e Queima Nozes: duas fragrâncias para deixar a casa ainda mais
+              acolhedora nesta época.
             </p>
           </div>
         </div>
@@ -234,7 +235,7 @@ export default function Home() {
         <div className="christmas-products-heading">
           <p className="eyebrow">Presentes especiais</p>
           <h3>Velas especiais de Natal</h3>
-          <p>Velas que trazem o encanto do Natal para a sua casa.</p>
+          <p>Vela Pinha e Vela Árvore para trazer o encanto do Natal para a sua casa.</p>
         </div>
         <div className="christmas-product-grid">
           {christmasProducts.map((product) => (

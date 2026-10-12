@@ -10,6 +10,7 @@ export type Product = {
 
 export type ScentCollection = {
   name: string;
+  family: string;
   notes: string;
   symbol: "wave" | "flower" | "branch";
 };
@@ -37,16 +38,25 @@ export const featuredProducts: Product[] = [
   {
     name: "Vela aromática",
     size: "60 g",
-    price: "$ 20",
+    price: "R$ 20,00",
     image: "/images/candle.png",
     imageAlt: "Vela aromática de 60 g em recipiente de vidro sobre tecido natural",
     featured: true,
     note: "Luz e fragrância para momentos especiais.",
   },
   {
+    name: "Vela aromática",
+    size: "180 g",
+    price: "R$ 50,00",
+    image: "/images/candle.png",
+    imageAlt: "Vela aromática de 180 g em recipiente de vidro sobre tecido natural",
+    featured: true,
+    note: "Uma presença perfumada para acompanhar por mais tempo.",
+  },
+  {
     name: "Difusor de aromas",
     size: "50 ml",
-    price: "$ 35",
+    price: "R$ 35,00",
     image: "/images/diffuser.png",
     imageAlt: "Difusor de aromas de 50 ml em vidro com varetas e flores secas",
     featured: true,
@@ -55,55 +65,85 @@ export const featuredProducts: Product[] = [
   {
     name: "Home spray",
     size: "30 ml",
-    price: "$ 15",
+    price: "R$ 20,00",
     image: "/images/home-spray.png",
     imageAlt: "Home spray de 30 ml em frasco de vidro em cenário de tons naturais",
     featured: true,
     note: "Perfume instantâneo para pequenos espaços.",
   },
+  {
+    name: "Home spray",
+    size: "120 ml",
+    price: "R$ 50,00",
+    image: "/images/home-spray.png",
+    imageAlt: "Home spray de 120 ml em frasco de vidro em cenário de tons naturais",
+    featured: true,
+    note: "Praticidade para perfumar cada ambiente.",
+  },
 ];
 
 export const kits: Product[] = [
   {
-    name: "Trio de home sprays",
+    name: "Kit difusor + home spray",
+    size: "Difusor 50 ml + home spray 30 ml",
+    price: "R$ 55,00",
+    note: "Uma dupla para perfumar o espaço de formas diferentes.",
+  },
+  {
+    name: "Kit 3 home sprays",
     size: "3 × 30 ml",
-    price: "$ 40",
+    price: "R$ 50,00",
     note: "Uma seleção compacta para descobrir novos aromas.",
   },
   {
-    name: "Kit pequeno",
-    size: "Difusor 50 ml + home spray 30 ml",
-    price: "$ 45",
-    note: "Um gesto delicado para presentear ou perfumar pequenos espaços.",
-  },
-  {
-    name: "Kit médio",
-    size: "Difusor 50 ml + home spray 120 ml",
-    price: "$ 70",
-    note: "Dois jeitos de manter o seu aroma favorito sempre por perto.",
-  },
-  {
     name: "Kit 3 velas",
-    size: "3 × 50 g",
-    price: "$55",
+    size: "3 × 60 g",
+    price: "R$ 55,00",
     note: "Três velas para iluminar e perfumar momentos especiais.",
   },
 ];
 
 export const scentCollections: ScentCollection[] = [
   {
-    name: "Maré",
-    notes: "Limão-siciliano, algas marinhas, água de coco e uva-verde",
+    name: "Água de Coco",
+    family: "Cítrica",
+    notes: "Notas aquáticas e suaves que trazem leveza e frescor.",
     symbol: "wave",
   },
   {
-    name: "Aconchego",
-    notes: "Alfazema, chá-branco e baunilha",
+    name: "Algas Marinhas",
+    family: "Aromática",
+    notes: "Notas do mar que renovam e trazem tranquilidade.",
+    symbol: "wave",
+  },
+  {
+    name: "Vanilla",
+    family: "Adocicada",
+    notes: "Doce e envolvente, com notas cremosas e reconfortantes.",
     symbol: "flower",
   },
   {
-    name: "Campo",
-    notes: "Bergamota, flor de laranjeira, cascas e folhas",
+    name: "Chá Branco",
+    family: "Floral fresca",
+    notes: "Leve e sofisticada, com notas florais e toque de frescor.",
+    symbol: "flower",
+  },
+  {
+    name: "Flor de Laranjeira",
+    family: "Floral cítrica",
+    notes: "Notas florais delicadas e cítricas que trazem alegria e leveza.",
+    symbol: "flower",
+  },
+  {
+    name: "Cascas e Folhas",
+    family: "Verde amadeirada",
+    notes: "Notas verdes e naturais que trazem equilíbrio e bem-estar.",
+    symbol: "branch",
+  },
+  {
+    name: "Trouss",
+    family: "Amadeirada",
+    notes: "Notas amadeiradas e sofisticadas, com toque moderno.",
     symbol: "branch",
   },
 ];
@@ -111,7 +151,7 @@ export const scentCollections: ScentCollection[] = [
 export const christmasScents: ChristmasScent[] = [
   {
     name: "Biscoito de Gengibre",
-    family: "Gourmand adocicada",
+    family: "Gourmand (adocicada)",
     notes: "Notas doces e especiadas que lembram o aconchego do Natal.",
   },
   {
@@ -135,19 +175,5 @@ export const christmasProducts: Product[] = [
     price: "R$ 35,00",
     image: "/images/christmas/vela-arvore-colorida.png",
     imageAlt: "Velas em formato de árvores em tons de creme, azul e rosa",
-  },
-  {
-    name: "Vela em lata",
-    size: "Edição de Natal",
-    price: "R$ 30,00",
-    image: "/images/christmas/vela-lata-feliz-natal.png",
-    imageAlt: "Vela em lata vermelha Feliz Natal com desenhos de Papai Noel",
-  },
-  {
-    name: "Kit Pinha + Árvore de Natal",
-    size: "Edição de Natal",
-    price: "R$ 65,00",
-    image: "/images/christmas/kit-natal.jpg",
-    imageAlt: "Kit com vela pinha e vela árvore de Natal",
   },
 ];

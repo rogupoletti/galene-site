@@ -454,8 +454,9 @@ svg {
 
 .christmas-product-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1rem, 2.1vw, 2rem);
+  max-width: 42rem;
 }
 
 .christmas-scent-card {
@@ -699,6 +700,17 @@ svg {
   color: rgba(255, 255, 255, 0.76);
   font-family: var(--font-display);
   line-height: 1.55;
+}
+
+.collection-card .collection-family {
+  margin: 0;
+  color: #f2c7ad;
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .story-section {
